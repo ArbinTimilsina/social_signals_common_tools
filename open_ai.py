@@ -9,7 +9,7 @@ openai.api_key = config["openai_key"]
 
 def get_openai_summary(text):
     prompt = f"Summarize the following text in one sentence:\n\n{text}"
-    
+
     try:
         response = openai.Completion.create(
             model="text-davinci-003",
