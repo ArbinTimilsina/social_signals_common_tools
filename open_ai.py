@@ -1,7 +1,7 @@
 import os
 
 import openai
-from common_constants import NONE_FILLER
+from common_tools.common_constants import NONE_FILLER
 
 config = eval(os.environ["config"])
 openai.api_key = config["openai_key"]

@@ -2,7 +2,7 @@ import os
 
 import boto3
 import sagemaker
-from common_constants import SUB_CATEGORIES
+from common_tools.common_constants import SUB_CATEGORIES
 from sagemaker.huggingface import HuggingFacePredictor
 
 config = eval(os.environ["config"])
