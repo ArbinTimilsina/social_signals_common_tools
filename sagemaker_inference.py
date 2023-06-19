@@ -6,8 +6,6 @@ from common_tools.common_constants import SUB_CATEGORIES
 from sagemaker.huggingface import HuggingFacePredictor
 
 config = eval(os.environ["config"])
-HUGGINGFACE_TOKEN = config["huggingface_token"]
-
 ZERO_SHOT_MODEL_ID = "facebook/bart-large-mnli"
 
 REGION_NAME = "us-east-1"
