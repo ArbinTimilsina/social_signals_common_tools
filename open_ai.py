@@ -12,9 +12,9 @@ def get_openai_summary(text):
 
     try:
         response = openai.Completion.create(
-            model="text-davinci-003",
+            model="text-curie-001",
             prompt=prompt,
-            temperature=0.7,
+            temperature=1.0,
             max_tokens=60,
             top_p=1.0,
             frequency_penalty=0.0,
