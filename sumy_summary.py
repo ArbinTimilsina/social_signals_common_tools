@@ -9,7 +9,7 @@ LANGUAGE = "english"
 SUMY_TOKENIZER = Tokenizer(LANGUAGE)
 SUMY_SUMMARIZER = Summarizer(Stemmer(LANGUAGE))
 SUMY_SUMMARIZER.stop_words = get_stop_words(LANGUAGE)
-SENTENCES_COUNT = 3
+SENTENCES_COUNT = 2
 
 
 def get_sumy_summary(comments, sentences_count=SENTENCES_COUNT):
